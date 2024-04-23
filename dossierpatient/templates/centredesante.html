@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des centres de santé</title>
+</head>
+<body>
+    <h1>Liste des centres de santé</h1>
+    <ul>
+        {% for centre in centres %}
+            <li>{{ centre.nom }} - {{ centre.adresse }} - {{ centre.telephone }} - {{ centre.email }} - {{ centre.capacite }} - {{ centre.specialite }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

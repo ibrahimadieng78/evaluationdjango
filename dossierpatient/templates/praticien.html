@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des patriciens</title>
+</head>
+<body>
+    <h1>Liste des patriciens</h1>
+    <ul>
+        {% for patricien in patriciens %}
+            <li>{{ patricien.nom }} {{ patricien.prenom }} - {{ patricien.specialite }} - {{ patricien.adresse }} - {{ patricien.telephone }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
